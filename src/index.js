@@ -3,13 +3,13 @@
   Author Tobias Koppers @sokra
 */
 
-import crypto from "crypto";
 import path from "path";
 
 import webpack, {
   ModuleFilenameHelpers,
   version as webpackVersion,
 } from "webpack";
+import { createHash } from "webpack/lib/util/createHash";
 import { validate } from "schema-utils";
 import serialize from "serialize-javascript";
 
@@ -229,7 +229,7 @@ class CompressionPlugin {
               originalAlgorithm: this.options.algorithm,
               compressionOptions: this.options.compressionOptions,
               name,
-              contentHash: crypto.createHash("md4").update(input).digest("hex"),
+              contentHash: createHash("md4").update(input).digest("hex"),
             };
           } else {
             cacheData.name = serialize({
