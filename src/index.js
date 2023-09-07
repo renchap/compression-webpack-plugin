@@ -224,7 +224,8 @@ class CompressionPlugin {
             cacheData.cacheKeys = {
               nodeVersion: process.version,
               // eslint-disable-next-line global-require
-              "compression-webpack-plugin": require("../package.json").version,
+              "@renchap/compression-webpack-plugin": require("../package.json")
+                .version,
               algorithm: this.algorithm,
               originalAlgorithm: this.options.algorithm,
               compressionOptions: this.options.compressionOptions,
@@ -376,7 +377,7 @@ class CompressionPlugin {
           stats.hooks.print
             .for("asset.info.compressed")
             .tap(
-              "compression-webpack-plugin",
+              "@renchap/compression-webpack-plugin",
               (compressed, { green, formatFlag }) =>
                 // eslint-disable-next-line no-undefined
                 compressed ? green(formatFlag("compressed")) : undefined

@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.1.4](https://github.com/renchap/compression-webpack-plugin/compare/v6.1.1...v6.1.4) (2023-09-07)
+
+- Rename the package to `@renchap/compression-webpack-plugin`
+
 ### [6.1.1](https://github.com/webpack-contrib/compression-webpack-plugin/compare/v6.1.0...v6.1.1) (2020-11-12)
 
 

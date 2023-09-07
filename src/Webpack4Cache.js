@@ -14,7 +14,10 @@ export default class Webpack4Cache {
   }
 
   static getCacheDirectory() {
-    return findCacheDir({ name: "compression-webpack-plugin" }) || os.tmpdir();
+    return (
+      findCacheDir({ name: "@renchap/compression-webpack-plugin" }) ||
+      os.tmpdir()
+    );
   }
 
   async get(cacheData, { RawSource }) {
