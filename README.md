@@ -1,3 +1,9 @@
+# Important note
+
+This if a fork of the original `compression-webpack-plugin` to add Node 18+ compatibility to the v6 version (the last one supporting Webpack 4).
+
+The changes are on the `v6-stable` branch, which is published on NPM as `@renchap/compression-webpack-plugin`.
+
 <div align="center">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
