@@ -1,6 +1,6 @@
 {
   "name": "@renchap/compression-webpack-plugin",
-  "version": "6.1.3",
+  "version": "6.1.4",
   "description": "Prepare compressed versions of assets to serve them with Content-Encoding",
   "license": "MIT",
   "repository": "renchap/compression-webpack-plugin",
